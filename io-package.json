@@ -1,6 +1,6 @@
 {
     "common": {
-        "name": "template",
+        "name": "Family Calendar",
         "version": "0.0.1",
         "news": {
             "0.0.1": {
@@ -16,7 +16,7 @@
                 "zh-cn": "首次出版"
             }
         },
-        "title": "Template (JavaScript)",
+        "title": "Family Calendar",
         "titleLang": {
             "en": "Template (JavaScript)",
             "de": "Vorlage (JavaScript)",
@@ -42,7 +42,7 @@
             "zh-cn": "适配器开发模板"
         },
         "authors": [
-            "Author <author@mail.com>"
+            "Andreas Kunze <andreas@kunze-familie.de>"
         ],
         "keywords": [
             "ioBroker",
@@ -55,8 +55,8 @@
         "main": "main.js",
         "icon": "template.png",
         "enabled": true,
-        "extIcon": "https://raw.githubusercontent.com/Author/ioBroker.template/main/admin/template.png",
-        "readme": "https://github.com/Author/ioBroker.template/blob/main/README.md",
+        "extIcon": "https://github.com/Kpt74/ioBroker.family-calendar/main/admin/template.png",
+        "readme": "https://github.com/Kpt74/ioBroker.family-calendar/blob/main/README.md",
         "loglevel": "info",
         "mode": "daemon",
         "type": "general",

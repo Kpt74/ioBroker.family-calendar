@@ -1,11 +1,11 @@
 {
     "cli": true,
     "target": "directory",
-    "adapterName": "template",
+    "adapterName": "Family Calendar",
     "description": "Template for adapter development",
-    "authorName": "Author",
-    "authorGithub": "Author",
-    "authorEmail": "author@mail.com",
+    "authorName": "Andreas Kunze",
+    "authorGithub": "Kpt74",
+    "authorEmail": "andreas@kunze-familie.de",
     "gitRemoteProtocol": "HTTPS",
     "dependabot": "yes",
     "license": "MIT License",
@@ -26,7 +26,7 @@
     "adminReact": "no",
     "tabReact": "no",
     "language": "JavaScript",
-    "title": "Template (JavaScript)",
+    "title": "Family Calendar",
     "tools": [
         "ESLint",
         "type checking"
