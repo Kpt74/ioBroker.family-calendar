@@ -19,7 +19,7 @@ class Template extends utils.Adapter {
     constructor(options) {
         super({
             ...options,
-            name: 'template',
+            name: 'family-calendar',
         });
         this.on('ready', this.onReady.bind(this));
         this.on('stateChange', this.onStateChange.bind(this));

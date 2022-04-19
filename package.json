@@ -3,8 +3,8 @@
   "version": "0.0.1",
   "description": "Family Calendar",
   "author": {
-    "name": "Author",
-    "email": "author@mail.com"
+    "name": "Andreas Kunze",
+    "email": "andreas@kunze-familie.de"
   },
   "homepage": "https://github.com/Kpt74/ioBroker.family-calendar",
   "license": "MIT",
