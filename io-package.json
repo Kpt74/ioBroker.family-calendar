@@ -85,8 +85,160 @@
             "filter": "ignored events",
             "filterregex": "no"
           }
+        ],
+        "events": [
+          {
+            "name": "Vacation",
+            "enabled": true,
+            "display": false,
+            "ack": false
+          }
         ]
-    },
-    "objects": [],
-    "instanceObjects": []
+      },
+      "instanceObjects": [
+        {
+          "_id": "events",
+          "type": "channel",
+          "common": {
+            "name": "User events controlled from calendar"
+          },
+          "native": {}
+        },
+        {
+          "_id": "events.0",
+          "type": "channel",
+          "common": {
+            "name": "User events of today, now and later today controlled from calendar"
+          },
+          "native": {}
+        },
+        {
+          "_id": "events.0.today",
+          "type": "channel",
+          "common": {
+            "name": "User events of today controlled from calendar"
+          },
+          "native": {}
+        },
+        {
+          "_id": "events.0.now",
+          "type": "channel",
+          "common": {
+            "name": "User events of now controlled from calendar"
+          },
+          "native": {}
+        },
+        {
+          "_id": "events.0.later",
+          "type": "channel",
+          "common": {
+            "name": "User events later of today controlled from calendar"
+          },
+          "native": {}
+        },
+        {
+          "_id": "events.1",
+          "type": "channel",
+          "common": {
+            "name": "User events of tomorrow controlled from calendar"
+          },
+          "native": {}
+        },
+        {
+          "_id": "events.2",
+          "type": "channel",
+          "common": {
+            "name": "User events of the day after tomorrow controlled from calendar"
+          },
+          "native": {}
+        },
+        {
+          "_id": "trigger",
+          "type": "state",
+          "common": {
+            "name": "Commands to iCal",
+            "desc": "Commands: read [url], check [reason]",
+            "type": "string",
+            "read": true,
+            "write": true,
+            "role": "value"
+          },
+          "native": {}
+        },
+        {
+          "_id": "data.count",
+          "type": "state",
+          "common": {
+            "name": "Count of events for today",
+            "type": "number",
+            "role": "indicator",
+            "read": true,
+            "write": false
+          },
+          "native": {}
+        },
+        {
+          "_id": "data.countTomorrow",
+          "type": "state",
+          "common": {
+            "name": "Count of events for tomorrow",
+            "type": "number",
+            "role": "indicator",
+            "read": true,
+            "write": false
+          },
+          "native": {}
+        },
+        {
+          "_id": "data.countYesterday",
+          "type": "state",
+          "common": {
+            "name": "Count of events for yesterday",
+            "type": "number",
+            "role": "indicator",
+            "read": true,
+            "write": false
+          },
+          "native": {}
+        },
+        {
+          "_id": "data.table",
+          "type": "state",
+          "common": {
+            "name": "JS iCal table",
+            "desc": "JS table: []",
+            "type": "array",
+            "role": "list",
+            "read": true,
+            "write": false
+          },
+          "native": {}
+        },
+        {
+          "_id": "data.html",
+          "type": "state",
+          "common": {
+            "name": "HTML iCal table",
+            "desc": "HTML table with events",
+            "type": "string",
+            "role": "html",
+            "read": true,
+            "write": false
+          },
+          "native": {}
+        },
+        {
+          "_id": "data.text",
+          "type": "state",
+          "common": {
+            "name": "Text iCal table",
+            "desc": "Text table with events",
+            "type": "string",
+            "role": "text",
+            "read": true,
+            "write": false
+          },
+          "native": {}
+        }
+    ]
 }
