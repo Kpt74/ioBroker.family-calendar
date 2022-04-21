@@ -58,7 +58,8 @@
         "extIcon": "https://github.com/Kpt74/ioBroker.family-calendar/main/admin/template.png",
         "readme": "https://github.com/Kpt74/ioBroker.family-calendar/blob/main/README.md",
         "loglevel": "info",
-        "mode": "daemon",
+        "mode": "schedule",
+        "schedule": "0,15,30,45 * * * *",
         "type": "general",
         "compact": true,
         "materialize": true,
@@ -88,8 +89,32 @@
         ]
     },
     "native": {
-        "option1": true,
-        "option2": "42"
+        "daysPreview": 7,
+        "daysPast": 0,
+        "colorize": true,
+        "defColor": "white",
+        "fulltime": " ",
+        "dataPaddingWithZeros": true,
+        "replaceDates": true,
+        "language": "",
+        "everyCalOneColor": false,
+        "forceFullday": false,
+        "hideYear": false,
+        "arrowAlreadyStarted": true,
+        "ignoreCaseInEventname": false,
+        "addColorBox": false,
+        "calendars": [
+          {
+            "name": "calendar1",
+            "url": "http://11111.ics",
+            "user": "username",
+            "pass": "password",
+            "sslignore": "ignore",
+            "color": "red",
+            "filter": "ignored events",
+            "filterregex": "no"
+          }
+        ]
     },
     "objects": [],
     "instanceObjects": []
