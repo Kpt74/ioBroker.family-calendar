@@ -1,0 +1,1 @@
+robocopy . C:\ioBroker\Test\node_modules\iobroker.family-calendar /mir /xd node_modules .git

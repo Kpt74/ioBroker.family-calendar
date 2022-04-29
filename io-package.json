@@ -1,7 +1,7 @@
 {
     "common": {
         "name": "family-calendar",
-        "version": "0.0.1",
+        "version": "0.0.2",
         "news": {
             "0.0.1": {
                 "en": "initial release",
@@ -38,7 +38,7 @@
         "readme": "https://github.com/Kpt74/ioBroker.family-calendar/blob/main/README.md",
         "loglevel": "info",
         "mode": "schedule",
-        "schedule": "0,15,30,45 * * * *",
+        "schedule": "* * * * *",
         "type": "general",
         "compact": true,
         "materialize": true,
@@ -85,73 +85,9 @@
             "filter": "ignored events",
             "filterregex": "no"
           }
-        ],
-        "events": [
-          {
-            "name": "Vacation",
-            "enabled": true,
-            "display": false,
-            "ack": false
-          }
         ]
       },
       "instanceObjects": [
-        {
-          "_id": "events",
-          "type": "channel",
-          "common": {
-            "name": "User events controlled from calendar"
-          },
-          "native": {}
-        },
-        {
-          "_id": "events.0",
-          "type": "channel",
-          "common": {
-            "name": "User events of today, now and later today controlled from calendar"
-          },
-          "native": {}
-        },
-        {
-          "_id": "events.0.today",
-          "type": "channel",
-          "common": {
-            "name": "User events of today controlled from calendar"
-          },
-          "native": {}
-        },
-        {
-          "_id": "events.0.now",
-          "type": "channel",
-          "common": {
-            "name": "User events of now controlled from calendar"
-          },
-          "native": {}
-        },
-        {
-          "_id": "events.0.later",
-          "type": "channel",
-          "common": {
-            "name": "User events later of today controlled from calendar"
-          },
-          "native": {}
-        },
-        {
-          "_id": "events.1",
-          "type": "channel",
-          "common": {
-            "name": "User events of tomorrow controlled from calendar"
-          },
-          "native": {}
-        },
-        {
-          "_id": "events.2",
-          "type": "channel",
-          "common": {
-            "name": "User events of the day after tomorrow controlled from calendar"
-          },
-          "native": {}
-        },
         {
           "_id": "trigger",
           "type": "state",

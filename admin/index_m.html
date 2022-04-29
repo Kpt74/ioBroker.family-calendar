@@ -73,16 +73,16 @@
             settings.calendars[c].filter = settings.calendars[c].filter || '';
         }
 
-        for (var e = 0; e < settings.events.length; e++) {
-            if (typeof settings.events[e].ack !== 'boolean') {
-                settings.events[e].ack = true;
-            }
-        }
+        // for (var e = 0; e < settings.events.length; e++) {
+        //     if (typeof settings.events[e].ack !== 'boolean') {
+        //         settings.events[e].ack = true;
+        //     }
+        // }
 
         onChange(false);
 
         values2table('calendars', calendars, onChange);
-        values2table('events', events, onChange);
+        // values2table('events', events, onChange);
     }
 
     function save(callback) {
@@ -97,7 +97,7 @@
         });
         // Get edited table
         obj.calendars = table2values('calendars');
-        obj.events    = table2values('events');
+        // obj.events    = table2values('events');
         callback(obj);
     }
 </script>
@@ -237,7 +237,7 @@
                 </div>
             </div>
         </div>
-        <div id="tab-events"    class="col s12 page">
+        <!-- <div id="tab-events"    class="col s12 page">
             <div class="col s12" id="events">
                 <a class="btn-floating waves-effect waves-light blue table-button-add"><i class="material-icons">add</i></a>
                 <div class="table-values-div">
@@ -257,7 +257,7 @@
                     </table>
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>
 </div>
 </body>
